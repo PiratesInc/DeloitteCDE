@@ -1,15 +1,14 @@
 
-/* hoja de estilos generales */    
+/* A todas las mujeres les gusta el caramelo! */    
 
 
 /* ! BASE STYLE ================== */
 
 body {
 	font: normal 0.75em/0.75em 'PT Sans', Tahoma, sans-serif;
-	text-align: center;
+	text-align: left;
 	color: #e1ffd5;
-	background-color:#22703f;
-	background: #898989 url(../images/body_BG.png) repeat-x top;
+	background: #FFF url(../images/body_BG.jpg) repeat-x top;
 }
 
 a {
@@ -55,26 +54,115 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 { font-size:2em; line-height:1.7em; }
-
 h3 { font-size:1.8em; line-height:1.4em; }
-
 h4 { font-size:1.6em; line-height:1.3em; }
-
 h5 { font-size:1.4em; line-height:1.2em; }
-
 h6 { font-size:1.2em; line-height:1.1em; }
 
 
 /* ! CONTENEDOR ================== */
 
-
+.center { width:980px; margin:0 auto; overflow:hidden; }
 
 /* ! Header ================== */
 
-header { width:100%; height:134px; padding:200px 0 2px; background:url(../images/header_border.png) no-repeat bottom center; text-align: center; }
+header { 
+	width:980px; 
+	margin:0 auto; 
+	height:98px; 
+	padding:0; 
+	background:url(../images/header_border.png) no-repeat bottom center;
+	position:relative;
+}
 
-hgroup { width:290px; height:115px; background:url(../images/deloitte_cde_logo.png) no-repeat; display:block; margin:0 auto; }
-hgroup h1, hgroup h2 { display: none; }
+	header > hgroup { float:left; margin:9px 0; }
+		header > hgroup a { display:block; }
+		header > hgroup h1, hgroup h2 { display: none; }
+		
+	header > nav {
+		position:absolute;
+		right:10px;
+		bottom:10px;
+		height:30px; 
+		overflow:hidden; 
+	}
+		header > nav ul li { 
+			float:left; 
+			margin:0 15px; 
+			height:100%;
+		}
+			header > nav ul li a { 
+				color:#fff; 
+				display:block; 
+				height:30px; 
+				line-height:30px; 
+				font-size:1.417em; 
+				font-weight:700;
+				text-shadow:1px 1px 3px rgba(0, 0, 0, 0.6);
+			}
+			header > nav ul li a:hover { color:#ddd; background:#203866; }
 
-section { margin:25px auto; width:980px; text-align:center; }
-section h3 { font:400 italic 2em/2em 'PT Sans'; } 
+section { margin:25px auto; width:980px; }
+section h3 {  }
+
+section.cursos { 
+	margin:0 auto 25px;
+	height:400px;
+	background:#333;
+	position:relative;
+}
+	section.cursos .destacados { float:left; width:595px; height:400px; overflow:hidden; position:relative; }
+		section.cursos .destacados ul { position:absolute; height:400px; width:4000px; }
+			section.cursos .destacados ul li { float:left; height:100%; width:595px; display:block; }
+				section.cursos .destacados ul li a { display:block; }
+					
+					section.cursos .destacados ul li img {  }
+					section.cursos .destacados ul li .info { 
+						width:555px; 
+						padding:15px 25px 10px; 
+						position:absolute; 
+						bottom:0; 
+						z-index:1;
+						background:#222;
+						background:rgba(0, 0, 0, 0.7);
+					}	
+						section.cursos .destacados ul li a h3 { color:#FFF; }
+						section.cursos .destacados ul li a p { color:#DDD; }
+						
+	section.cursos ul.navigator { position:absolute; height:25px; width:auto; left:25%; bottom:-12px; z-index:9; }
+		section.cursos ul.navigator li { float:left; width:25px; height:25px; margin:0 7px; }
+			section.cursos ul.navigator li a { 
+				display:block; 
+				height:100%; 
+				background:gray; 
+				text-indent:-9999px;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+			}
+				
+				
+	section.cursos .proximos { float:right; width:355px; height:370px; padding:15px; position:relative; }
+		section.cursos .proximos h2 { color:#FFF; margin:0 20px; }
+		section.cursos .proximos form { padding:5px 20px; }
+		section.cursos .proximos ul.page { padding:10px; }
+			section.cursos .proximos ul.page li { margin:10px; }
+				section.cursos .proximos ul.page li h3 { color:#fff; }
+				section.cursos .proximos ul.page li p { color:#ddd;  }
+				
+	section.cursos ul.paginator { position:absolute; height:25px; width:75%; left:25%; bottom:5px; z-index:9; }
+		section.cursos ul.paginator li { float:left; margin:5px; }
+			section.cursos ul.paginator li a { 
+				color:#DDD;
+			}
+			section.cursos ul.paginator li a:hover { color:#FFF; }
+ 
+footer { background:url(../images/footer_BG.png) repeat-x bottom; height:270px;}
+	footer .center { background:url(../images/header_border.png) no-repeat top center; }
+	
+		footer .info { float:left; width:560px; padding:20px; }
+		
+		footer .banners { float: right; width:325px; padding:20px; }
+			footer .banners li { margin:10px 0; }
+				footer .banners li a { display:block; width:325px; height:105px; }
+				footer .banners li a img { background:#333; width:325px; height:105px; }
