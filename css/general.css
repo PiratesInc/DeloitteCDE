@@ -89,7 +89,7 @@ header {
 	}
 		header > nav ul li { 
 			float:left; 
-			margin:0 15px; 
+			margin:0 5px; 
 			height:100%;
 		}
 			header > nav ul li a { 
@@ -100,7 +100,12 @@ header {
 				font-size:1.417em; 
 				font-weight:700;
 				text-shadow:1px 1px 3px rgba(0, 0, 0, 0.6);
+				padding: 0 15px;
+				-webkit-border-radius: 15px;
+				-moz-border-radius: 15px;
+				border-radius: 15px; 				
 			}
+			
 			header > nav ul li a:hover { color:#ddd; background:#203866; }
 			header > nav ul li a.active { color:#ddd; background:#203866; }
 			
@@ -175,7 +180,8 @@ section.cursos {
 
 section.bottom { overflow: hidden; position: relative; }
 
-	section.bottom > article { width: 655px; float: left;}
+	section.bottom > article { width: 655px; float: left; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #d1d1d1; }
+		section.bottom > article img { float: left; margin: 0 15px 0 0; }
 	
 	section.bottom .novedades { width: 655px; float: left; }
 		.novedades ul li { width: 210px; float: left; margin-left: 10px; }
