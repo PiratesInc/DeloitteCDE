@@ -69,3 +69,61 @@ section.main { overflow: hidden; padding-bottom: 15px; }
 		.cerrados ul li { float: left; width: 480px; background: #dfdfdf; margin: 5px; }
 			.cerrados ul li a { display: block; }
 	
+/* ! CONTENIDO CENTRAL ================== */
+
+.contenido { width: 620px; float: left; padding: 10px; }
+
+
+/* ! CLIENTES ================== */
+
+ul.logos {}
+	ul.logos li { text-align: center; width: 100px; padding: 10px; float: left; }
+		ul.logos li img { width: 100px; height: 100px; background: #e1e1e1; margin-bottom: 10px; }
+		ul.logos li h6 {}
+		
+		
+/* ! NOTICIAS ================== */
+
+
+article.first { position: relative; }
+
+
+
+article.second { clear: both; }
+	article.second a { display: block; }
+	article.second img { display: block; float: left; margin-right: 15px; }
+	article.second .info {}
+
+
+
+.comentar { background: #d1d1d1; padding: 15px; }
+
+
+
+/* ! SIDEBAR ================== */
+
+aside { width: 300px; padding: 10px; float: right; }
+	aside .modulo { width: 100%; clear: both; margin: 10px 0; }
+	
+	aside .news { overflow: hidden; }
+		aside .news ul {}
+		aside .news ul li { overflow: hidden; clear: both; padding: 15px 0; border-top: 1px solid #d1d1d1; }
+		aside .news ul li img { display: block; width: 90px; height: 90px; float: left; margin: 0 10px 10px 0; }
+		aside .news ul li .info { width: 200px; float: right; }
+		aside .news ul li .info .comentarios { padding: 10px; background: #d1d1d1; color: #999; float: right; }
+		
+
+	aside .adds { background: #333; text-align: center; height: 100px;}
+		aside .adds h5 { color: #666; line-height: 100px; } /* <<---- LINEA TEMPORAL, BORRAR ---->> */
+		
+		
+/* ! PAGINADOR ================== */
+
+
+.paginador { height: 50px; width: 100%; padding: 10px 0; clear: both; }
+.paginador ul {}
+.paginador ul li { float: left; margin: 0 5px 0 0; }
+.paginador ul li a { display: block; font-size: 1.25em; line-height: 1.3em; padding: 0 5px; background: #d1d1d1; color: #333; }
+.paginador ul li a:hover { color: #92d400; }
+
+
