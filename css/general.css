@@ -7,18 +7,18 @@
 body {
 	font: normal 0.75em/0.75em 'PT Sans', Tahoma, sans-serif;
 	text-align: left;
-	color: #e1ffd5;
+	color: #444444;
 	background: #FFF url(../images/body_BG.jpg) repeat-x top;
 }
 
 a {
-	color: #99BF0F;
+	color: #2c4d8c;
 	text-decoration: none;
 	border:none;
 }
 
 a:hover {
-	color: #5893cc;
+	color: #92d400;
 	text-decoration: none;
 }
 
@@ -64,7 +64,8 @@ h6 { font-size:1.2em; line-height:1.1em; }
 
 .center { width:980px; margin:0 auto; overflow:hidden; }
 
-/* ! Header ================== */
+
+/* ! HEADER ================== */
 
 header { 
 	width:980px; 
@@ -101,9 +102,22 @@ header {
 				text-shadow:1px 1px 3px rgba(0, 0, 0, 0.6);
 			}
 			header > nav ul li a:hover { color:#ddd; background:#203866; }
+			header > nav ul li a.active { color:#ddd; background:#203866; }
+			
+/* ! SEARCH BOX ================== */
+
+.search { width: 215px; float: right; }
+	.search input[type="text"] { float: left; width: 170px; }
+	.search input[type="submit"] { width: 25px; }
+
+			
+/* ! SECCIONES ================== */
 
 section { margin:25px auto; width:980px; }
 section h3 {  }
+
+
+/* ! HOME ================== */
 
 section.cursos { 
 	margin:0 auto 25px;
@@ -111,8 +125,8 @@ section.cursos {
 	background:#333;
 	position:relative;
 }
-	section.cursos .destacados { float:left; width:595px; height:400px; overflow:hidden; position:relative; }
-		section.cursos .destacados ul { position:absolute; height:400px; width:4000px; }
+	section.cursos .destacados { float:left; width:595px; height:400px; }
+		section.cursos .destacados ul { height:400px; }
 			section.cursos .destacados ul li { float:left; height:100%; width:595px; display:block; }
 				section.cursos .destacados ul li a { display:block; }
 					
@@ -156,8 +170,46 @@ section.cursos {
 				color:#DDD;
 			}
 			section.cursos ul.paginator li a:hover { color:#FFF; }
+			
+/* ! ARTÍCULOS / NOVEDADES / NOTICIAS ================== */
+
+section.bottom { overflow: hidden; position: relative; }
+
+	section.bottom > article { width: 655px; float: left;}
+	
+	section.bottom .novedades { width: 655px; float: left; }
+		.novedades ul li { width: 210px; float: left; margin-left: 10px; }
+		.novedades ul li:first-child { margin: 0; }
+
+			
+
+/* ! INICIAR SESIÓN ================== */
+
+.ingreso {
+	width: 275px;
+	height: 240px;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	background: #ebebeb;
+}
+			
+
+
+/* ! FOOTER ================== */
  
-footer { background:url(../images/footer_BG.png) repeat-x bottom; height:270px;}
+footer { background:url(../images/footer_BG.png) repeat-x bottom; height:270px; clear: both; overflow: hidden; }
+
+	footer h4,
+	footer h5,
+	footer h6 { color: #fff; }
+
+	footer a { color: #92d400; }
+	footer a:hover { color: #fff; }
+	
+
+	
 	footer .center { background:url(../images/header_border.png) no-repeat top center; }
 	
 		footer .info { float:left; width:560px; padding:20px; }

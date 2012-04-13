@@ -1,0 +1,71 @@
+/* Páginas Interiores
+-------------------------------------------------------------------------------*/
+
+section.main { overflow: hidden; padding-bottom: 15px; }
+
+
+/* ! BREADCRUMBS / MIGA DE PAN ================== */
+
+.breadcrumbs { height: 25px; }
+	.breadcrumbs ul {}
+		.breadcrumbs ul li { float: left; }
+			.breadcrumbs ul li a { display: block; }
+			.breadcrumbs ul li a:hover {}
+
+	
+
+/* ! TÍTULO SECCIÓN / PÁGINA ================== */
+
+.title { clear: both; height: 30px; padding-bottom: 20px; border-bottom: 3px solid #dfdfdf; }
+	.title h2 { float: left; }
+	
+/* Filtros Cursos */
+	.title .filtros { width: 500px; float: right; }
+		.filtros ul { display: none; }
+			.filtros ul li { }
+				.filtros ul li a { }
+				.filtros ul li a:hover { }
+				
+				
+				
+/* ! CURSOS ABIERTOS ================== */
+
+.principales { padding: 10px; height: 355px; }
+	.principales ul { }
+		.principales ul li { float: left; position: relative; width: 50%; }
+			.principales ul li img { display: block; }
+			.principales ul li .info {
+				background: url(../images/destacado_bg.png) 0 0 no-repeat;
+				width: 422px;
+				height: 157px;
+				position: absolute;
+				z-index: 10;
+				left: 0;
+				bottom: -75px;
+				
+			}
+				.principales ul li .info a { display: block; }
+				.principales ul li .info h3 { color: #fff; }
+				.principales ul li .info span { color: #fff; }
+				.principales ul li .info p { color: #fff; }
+
+
+
+.secundarios { clear: both; }
+	.secundarios ul {}
+	.secundarios ul li { float: left; width: 450px; margin: 5px; background: #777777; padding: 15px; }
+		.secundarios ul li a { display: block; }
+			.secundarios ul li img { display: block; float: left; margin-right: 15px; }
+			.secundarios ul li .info {}
+				.secundarios ul li .info h3 { color: #fff; }
+				.secundarios ul li .info span { color: #fff; }
+				.secundarios ul li .info p { color: #fff; }
+		
+	
+/* ! CURSOS CERRADOS ================== */
+
+.cerrados {}
+	.cerrados ul {}
+		.cerrados ul li { float: left; width: 480px; background: #dfdfdf; margin: 5px; }
+			.cerrados ul li a { display: block; }
+	
